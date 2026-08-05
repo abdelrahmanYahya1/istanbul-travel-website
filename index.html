@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istanbul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Istanjourney</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">programs</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">gallery</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">Book a Tour</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-left">
+                <h1>Discover Istanbul's Hidden Gems</h1>
+                <p>Its vibrant culture, delicious cuisine, and welcoming people make it a must-visit destination for any
+                    traveler seeking adventure, beauty, and inspiration.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="hero-right">
+                <img src="images/hero-img.png" class="hero-image" alt="Istanbul">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-title">
+                <span>About Us</span>
+                <h1>One of the most popular travel
+                    agencies in 2023</h1>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-img.png" alt="Tower">
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h2>10000+</h2>
+                        <p>tourists have already got to
+                            know Istanbul with us</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>10</h2>
+                        <p>years of experience in
+                            conducting tours in Istanbul </p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>99%</h2>
+                        <p>of tourists gave excellent
+                            rating our agency</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>15+</h2>
+                        <p>languages in which
+                            excursions are conducted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="container">
+            <div class="tours-header">
+                <h2>
+                    The most popular tours
+                    <br>
+                    for everyone
+                </h2>
+                <p>
+                    We are dedicated to curating exceptional travel experiences
+                    that allow you to discover the true essence of this captivating
+                    city. With our carefully crafted selection of popular tours,
+                    you can immerse yourself in the vibrant culture, explore historical
+                    marvels, and create unforgettable memories.
+                </p>
+            </div>
+            <div class="tour-slider">
+                <button id="prevBtn" class="arrow left">
+                    &#10094;
+                </button>
+                <div class="tour-card">
+                    <div class="tour-info">
+                        <h3 id="tourTitle">Historical Tour</h3>
+                        <p id="tourDesc1">
+                            A tour of Istanbul can take you through the city's magnificent
+                            landmarks, such as the Blue Mosque, and the Topkapi Palace.
+                        </p>
+                        <p id="tourDesc2">
+                            You can also explore Istanbul's diverse neighborhoods,
+                            each with its own character and charm.
+                        </p>
+                        <a href="#" class="read-btn">Read More</a>
+                    </div>
+                    <div class="tour-image">
+                        <img id="tourImage" src="images/image (4).png" alt="">
+                    </div>
+                </div>
+                <button id="nextBtn" class="arrow right">
+                    &#10095;
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="tourModal">
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn">✕</button>
+            <img id="modalImage" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-title">
+                <h2>A Captivating Photo<br>Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item img1">
+                    <img src="images/Rectangle 8.png" alt="">
+                </div>
+                <div class="gallery-item img2">
+                    <img src="images/Rectangle 9.png" alt="">
+                </div>
+                <div class="gallery-item img3">
+                    <img src="images/Rectangle 13.png" alt="">
+                </div>
+                <div class="gallery-item img4">
+                    <img src="images/Rectangle 7.png" alt="">
+                </div>
+                <div class="gallery-item img5">
+                    <img src="images/Rectangle 12.png" alt="">
+                </div>
+                <div class="gallery-item img6">
+                    <img src="images/Rectangle 21.png" alt="">
+                </div>
+                <div class="gallery-item img7">
+                    <img src="images/Rectangle 5.png" alt="">
+                </div>
+                <div class="gallery-item img8">
+                    <img src="images/Rectangle 10.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="places">
+        <div class="container">
+            <div class="places-header">
+                <h2>
+                    Must-Visit Places in
+                    <br>
+                    Istanbul
+                </h2>
+                <p>
+                    Istanbul, a mesmerizing blend of East and West, is a city that
+                    beckons with its rich history, vibrant culture, and stunning
+                    architecture. As you wander through its bustling streets,
+                    there are certain places that simply cannot be missed.
+                </p>
+            </div>
+            <div class="places-grid">
+                <div class="place-card">
+                    <img src="images/galata-brideg.jpg" alt="Galata Bridge">
+                    <div class="place-info">
+                        <h3>Galata Bridge</h3>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <img src="images/Basilica.png" alt="Basilica Cistern">
+                    <div class="place-info">
+                        <h3>Basilica Cistern</h3>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <img src="images/Suleymaniye.png" alt="Süleymaniye Mosque">
+                    <div class="place-info">
+                        <h3>Süleymaniye Mosque</h3>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <img src="images/Emirgan Park.png" alt="Emirgan Park">
+                    <div class="place-info">
+                        <h3>Emirgan Park</h3>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <img src="images/bosphorus.jpg" alt="Bosphorus">
+                    <div class="place-info">
+                        <h3>Bosphorus</h3>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <img src="images/miniaturk.png" alt="Miniaturk">
+                    <div class="place-info">
+                        <h3>Miniaturk</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking">
+        <div class="container">
+            <div class="booking-image">
+                <img src="images/booking.png" alt="Istanbul">
+            </div>
+            <div class="booking-content">
+                <h2>
+                    Embark on an Unforgettable
+                    Journey: Book Your Istanbul
+                    Tour Today!
+                </h2>
+                <form class="booking-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Mobile Phone">
+                    <div class="form-bottom">
+                        <select>
+                            <option selected disabled>Tour</option>
+                            <option>Historical Tour</option>
+                            <option>Blue Mosque</option>
+                            <option>Galata Tower</option>
+                            <option>Bosphorus Cruise</option>
+                        </select>
+                        <button type="submit">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h2>ISTANJOURNEY</h2>
+                    <p>
+                        Would you like a free consultation?
+                        <br>
+                        Perhaps your existing.
+                    </p>
+                    <p class="phone">
+                        Call us today at
+                        <a href="tel:+12334564789">1-233-456-4789</a>
+                    </p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Resource</h3>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Term and Condition</a></li>
+                        <li><a href="#">Safety and Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Term and Condition</a></li>
+                        <li><a href="#">Safety and Security</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2023 ©ISTANJOURNEY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</body>
+
+</html>
