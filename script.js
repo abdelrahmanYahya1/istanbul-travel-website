@@ -47,7 +47,7 @@ const image = document.getElementById("tourImage");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-let current = 0;~
+let current = 0;
 function showTour() {
     title.textContent = tours[current].title;
     desc1.textContent = tours[current].desc1;
