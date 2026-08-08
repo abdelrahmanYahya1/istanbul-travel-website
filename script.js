@@ -35,7 +35,6 @@ const modal = document.getElementById("tourModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalImage = document.getElementById("modalImage");
 const modalText = document.getElementById("modalText");
-
 const closeModal = document.getElementById("closeModal");
 const readBtn = document.querySelector(".read-btn");
 
@@ -46,6 +45,7 @@ const image = document.getElementById("tourImage");
 
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
+const header = document.querySelector(".header");
 
 let current = 0;
 function showTour() {
@@ -54,7 +54,6 @@ function showTour() {
     desc2.textContent = tours[current].desc2;
     image.src = tours[current].image;
 }
-
 showTour();
 
 nextBtn.addEventListener("click", function () {
@@ -88,5 +87,13 @@ closeModal.addEventListener("click", function () {
 modal.addEventListener("click", function (e) {
     if (e.target === modal) {
         modal.style.display = "none";
+    }
+});
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
     }
 });
